@@ -3,3 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.container{
+    background-color: grey;
+}
+
+.archive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.celle{
+    width: calc(100% / 10);
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    border: 1px solid red;
+    color: blue;
+}
+
