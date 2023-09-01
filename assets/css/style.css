@@ -5,21 +5,28 @@
 }
 
 .container{
-    background-color: grey;
+    background-color:darkolivegreen;
 }
 
 .archive{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    
 }
 
 .celle{
     width: calc(100% / 10);
     aspect-ratio: 1 / 1;
     text-align: center;
-    border: 1px solid red;
-    color: blue;
+    border: 1px dashed red;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-aqua {
+    background-color: lightskyblue
 }
 

@@ -4,17 +4,26 @@ Ci saranno quindi 10 caselle per ognuna delle 10 righe.
 Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata. */
 
 // faccio due variabili 
- 
+
 const archiveEl = document.querySelector(".archive")
 const celleMax = 100
 
 // faccio un ciclo in cui itero per 100 volte in modo tale da creare le celle
 
-for (let i = 0; i < celleMax ; i++) {
-    const cellaElement  = document.createElement('div')
+for (let i = 0; i < celleMax; i++) {
+    // faccio un ciclo in cui itero per 100 volte in modo tale da creare le celle
+    // creo un div ed inserisco la classe celle a cui inserisco l'iterazione di 100
+    const cellaElement = document.createElement('div')
     cellaElement.className = 'celle'
     cellaElement.innerText = i + 1
+
+    // appendo ad archivio il contenuto di cellaelement 
     archiveEl.append(cellaElement)
     console.log(archiveEl);
-    
+
+    cellaElement.addEventListener('click', function () {
+    cellaElement.classList.toggle("bg-aqua")
+    console.log(cellaElement);
+    })
 }
+
